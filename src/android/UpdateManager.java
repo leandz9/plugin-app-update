@@ -84,7 +84,7 @@ public class UpdateManager {
             switch (msg.what) {
                 case Constants.NETWORK_ERROR:
                     //暂时隐藏错误
-                    //msgBox.showErrorDialog(errorDialogOnClick);
+                    msgBox.showErrorDialog(errorDialogOnClick);
                     callbackContext.error(Utils.makeJSON(Constants.NETWORK_ERROR, "network error"));
                     break;
                 case Constants.VERSION_COMPARE_START:
@@ -166,6 +166,8 @@ public class UpdateManager {
                     mHandler.sendEmptyMessage(Constants.VERSION_NEED_UPDATE);
                 }
             }
+        } else if (versionCodeLocal > versionCodeRemote) {
+            msgBox.showDowngradeDialog(errorDialogOnClick);
         } else {
             mHandler.sendEmptyMessage(Constants.VERSION_UP_TO_UPDATE);
             // Do not show Toast

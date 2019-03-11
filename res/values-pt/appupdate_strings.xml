@@ -15,4 +15,8 @@
     <string name="update_error_title">Erro</string>
     <string name="update_error_message">A rede não está disponível, por favor verifique suas configurações de conexão.</string>
     <string name="update_error_yes_btn">OK</string>
+
+    <string name="update_downgrade_title">Falha na atualização</string>
+    <string name="update_downgrade_message">Não é possível atualizar o aplicativo para uma versão mais antiga. Reinstale o aplicativo.</string>
+    <string name="update_downgrade_yes_btn">OK</string>
 </resources>

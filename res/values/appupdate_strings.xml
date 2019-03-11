@@ -15,4 +15,8 @@
     <string name="update_error_title">Error</string>
     <string name="update_error_message">The current network is unavailable , please check your network settings.</string>
     <string name="update_error_yes_btn">OK</string>
+
+    <string name="update_downgrade_title">Falha na atualização</string>
+    <string name="update_downgrade_message">Não é possível atualizar o aplicativo para uma versão mais antiga. Reinstale o aplicativo.</string>
+    <string name="update_downgrade_yes_btn">OK</string>    
 </resources>
