@@ -16,7 +16,7 @@
     <string name="update_error_message">A rede não está disponível, por favor verifique suas configurações de conexão.</string>
     <string name="update_error_yes_btn">OK</string>
 
-    <string name="update_downgrade_title">Falha na atualização</string>
-    <string name="update_downgrade_message">Não é possível atualizar o aplicativo para uma versão mais antiga. Reinstale o aplicativo.</string>
+    <string name="update_downgrade_title">Atenção</string>
+    <string name="update_downgrade_message">Técnico não está autorizado a utilizar esta versão.\nDesinstale o aplicativo e em seguida baixe a versão adequada através do portal.\n[operacaomobile.oi.net.br/baixar]</string>
     <string name="update_downgrade_yes_btn">OK</string>
 </resources>

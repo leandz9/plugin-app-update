@@ -138,6 +138,7 @@ public class MsgBox {
             builder.setCancelable(false);
             builder.setTitle(msgHelper.getString(MsgHelper.UPDATE_DOWNGRADE_TITLE));
             builder.setMessage(msgHelper.getString(MsgHelper.UPDATE_DOWNGRADE_MESSAGE));
+            builder.setPositiveButton(msgHelper.getString(MsgHelper.UPDATE_DOWNGRADE_YES_BTN), downgradeDialogOnClick);
             downgradeDialog = builder.create();
         }
 
