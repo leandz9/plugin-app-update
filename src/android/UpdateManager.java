@@ -1,5 +1,6 @@
 package com.vaenow.appupdate.android;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -84,7 +85,7 @@ public class UpdateManager {
             switch (msg.what) {
                 case Constants.NETWORK_ERROR:
                     //暂时隐藏错误
-                    //msgBox.showErrorDialog(errorDialogOnClick);
+                    msgBox.showErrorDialog(errorDialogOnClick);
                     callbackContext.error(Utils.makeJSON(Constants.NETWORK_ERROR, "network error"));
                     break;
                 case Constants.VERSION_COMPARE_START:
@@ -110,6 +111,9 @@ public class UpdateManager {
                     break;
                 case Constants.VERSION_RESOLVE_FAIL:
                     callbackContext.error(Utils.makeJSON(Constants.VERSION_RESOLVE_FAIL, "version resolve fail"));
+                    break;
+                case Constants.VERSION_DOWNGRADE:
+                    callbackContext.error(Utils.makeJSON(Constants.VERSION_DOWNGRADE, "downgrade"));
                     break;
                 case Constants.REMOTE_FILE_NOT_FOUND:
                     callbackContext.error(Utils.makeJSON(Constants.REMOTE_FILE_NOT_FOUND, "remote file not found"));
@@ -166,6 +170,8 @@ public class UpdateManager {
                     mHandler.sendEmptyMessage(Constants.VERSION_NEED_UPDATE);
                 }
             }
+        } else if (versionCodeLocal > versionCodeRemote) {
+            msgBox.showDowngradeDialog(downgradeDialogOnClick);
         } else {
             mHandler.sendEmptyMessage(Constants.VERSION_UP_TO_UPDATE);
             // Do not show Toast
@@ -238,6 +244,13 @@ public class UpdateManager {
         @Override
         public void onClick(DialogInterface dialog, int which) {
             dialog.dismiss();
+        }
+    };
+
+    private OnClickListener downgradeDialogOnClick = new OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            mHandler.sendEmptyMessage(Constants.VERSION_DOWNGRADE);
         }
     };
 

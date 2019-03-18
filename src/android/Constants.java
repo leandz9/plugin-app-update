@@ -24,6 +24,7 @@ public interface Constants {
      */
     int VERSION_RESOLVE_FAIL = 301; //版本文件解析错误 version-xml file resolve fail
     int VERSION_COMPARE_FAIL = 302; //版本文件对比错误 version-xml file compare fail
+    int VERSION_DOWNGRADE = 303;
 
     /**
      * 网络错误

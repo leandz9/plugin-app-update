@@ -2,7 +2,7 @@
 <resources>
     <string name="update_latest">Agora você tem a última versão</string>
     <string name="update_title">Nova atualização</string>
-    <string name="update_message">O aplicativo precisa ser atualizado !</string>
+    <string name="update_message">O aplicativo precisa ser atualizado!</string>
     <string name="update_update_btn">Atualizar</string>
     <string name="updating">Atualizando</string>
     <string name="update_cancel">Cancelar</string>
@@ -15,4 +15,8 @@
     <string name="update_error_title">Erro</string>
     <string name="update_error_message">A rede não está disponível, por favor verifique suas configurações de conexão.</string>
     <string name="update_error_yes_btn">OK</string>
+
+    <string name="update_downgrade_title">Atenção</string>
+    <string name="update_downgrade_message">Técnico não está autorizado a utilizar esta versão.\nDesinstale o aplicativo e em seguida baixe a versão adequada através do portal.\n[operacaomobile.oi.net.br/baixar]</string>
+    <string name="update_downgrade_yes_btn">OK</string>
 </resources>
