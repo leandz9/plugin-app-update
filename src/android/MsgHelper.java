@@ -22,7 +22,9 @@ public class MsgHelper {
     public static String UPDATE_ERROR_TITLE = "update_error_title";
     public static String UPDATE_ERROR_MESSAGE = "update_error_message";
     public static String UPDATE_ERROR_YES_BTN = "update_error_yes_btn";
-
+    public static String UPDATE_DOWNGRADE_TITLE = "update_downgrade_title";
+    public static String UPDATE_DOWNGRADE_MESSAGE = "update_downgrade_message";
+    public static String UPDATE_DOWNGRADE_YES_BTN = "update_downgrade_yes_btn";
 
     MsgHelper(String packageName, Resources resources) {
         this.packageName = packageName;
