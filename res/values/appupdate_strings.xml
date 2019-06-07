@@ -17,6 +17,6 @@
     <string name="update_error_yes_btn">OK</string>
 
     <string name="update_downgrade_title">Warning</string>
-        <string name="update_downgrade_message">Technician is not authorized to use this version.\nUninstall the application and then download the appropriate version through the portal.\n[operacaomobile.oi.net.br/baixar]</string>
+        <string name="update_downgrade_message">Technician is not authorized to use this version.\nUninstall the application and then download the appropriate version through the portal.\n[baixaropm.oi.net.br/baixar]</string>
     <string name="update_downgrade_yes_btn">OK</string>    
 </resources>

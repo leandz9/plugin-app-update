@@ -17,6 +17,6 @@
     <string name="update_error_yes_btn">OK</string>
 
     <string name="update_downgrade_title">Atenção</string>
-    <string name="update_downgrade_message">Técnico não está autorizado a utilizar esta versão.\nDesinstale o aplicativo e em seguida baixe a versão adequada através do portal.\n[operacaomobile.oi.net.br/baixar]</string>
+    <string name="update_downgrade_message">Técnico não está autorizado a utilizar esta versão.\nDesinstale o aplicativo e em seguida baixe a versão adequada através do portal.\n[baixaropm.oi.net.br/baixar]</string>
     <string name="update_downgrade_yes_btn">OK</string>
 </resources>
