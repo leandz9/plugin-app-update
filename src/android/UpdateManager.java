@@ -55,7 +55,7 @@ public class UpdateManager {
     }
 
     public UpdateManager(JSONArray args, CallbackContext callbackContext, Context context, JSONObject options) {
-        this(args, callbackContext, context, "http://192.168.3.102:8080/update_apk/version.xml", options);
+        this(args, callbackContext, context, "", options);
     }
 
     public UpdateManager(JSONArray args, CallbackContext callbackContext, Context context, String updateUrl, JSONObject options) {
